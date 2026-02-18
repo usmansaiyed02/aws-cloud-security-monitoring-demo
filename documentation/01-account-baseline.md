@@ -26,3 +26,13 @@ AdministratorAccess, AWSBillingConductorFullAccess, Billing
 ## Evidence
 - Screenshots:
   - (add filenames here)
+
+## Cost Governance
+
+### Budget Created
+- Name: cloud-security-demo-budget
+- Amount: $5/month
+- Alerts: 50% and 80%
+
+### Evidence
+![Billing Budget](../screenshots/2026-02-17_p0_billing-budget-created.png)
