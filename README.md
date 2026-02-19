@@ -30,7 +30,7 @@ The objective is to centralize logging, detect suspicious activity, trigger aler
 
 ## Architecture Diagram
 
-![AWS Cloud Security Monitoring Architecture](screenshots/cloud-security-monitoring-architecture)
+![AWS Cloud Security Monitoring Architecture](screenshots/cloud-security-monitoring-architecture.png)
 
 The architecture implements a layered cloud security monitoring model:
 
