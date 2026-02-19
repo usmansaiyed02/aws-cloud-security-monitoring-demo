@@ -28,8 +28,18 @@ The objective is to centralize logging, detect suspicious activity, trigger aler
 
 ---
 
-## Architecture
-(To be added after implementation)
+## Architecture Diagram
+
+![AWS Cloud Security Monitoring Architecture](screenshots/cloud-security-monitoring-architecture.png)
+
+The architecture implements a layered cloud security monitoring model:
+
+- **Telemetry Layer** – CloudTrail (multi-region management events) captures control-plane activity.
+- **Custom Detection Engineering** – CloudWatch Logs + Metric Filters generate deterministic detections for IAM abuse.
+- **Alerting Layer** – CloudWatch Alarms (Sum, 5-min, ≥1) trigger SNS email notifications.
+- **Managed Threat Detection** – GuardDuty provides behavioral and threat-intelligence–based analysis.
+- **Security Posture Layer** – Security Hub CSPM aggregates findings and evaluates CIS + AWS best practice controls.
+- **Security Operations Layer** – All alerts and findings converge into a structured SOC-style investigation workflow.
 
 ---
 
